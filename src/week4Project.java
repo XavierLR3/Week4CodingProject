@@ -2,13 +2,14 @@
 public class week4Project {
 
 	public static void main(String[] args) {
-int[] ages = {3, 9, 23, 64, 2, 8, 28, 93};
+		//First array of int called ages with their values
+		int[] ages = {3, 9, 23, 64, 2, 8, 28, 93};
         
         // a. Subtract the value of the first element from the last element
         int result = ages[ages.length - 1] - ages[0];
         System.out.println(result);
     
-        // b. Create a new array ages2 with 9 elements
+        // b. Create a new array ages2 with 9 elements, added 45 as the last element
         int[] ages2 = {3, 9, 23, 64, 2, 8, 28, 93, 45};
         
         // i. Subtract first element from last in ages2
@@ -23,6 +24,7 @@ int[] ages = {3, 9, 23, 64, 2, 8, 28, 93};
         double averageAge = (double) sum / ages.length;
         System.out.println("Average age: " + averageAge);
         
+        //String array with the requested values
         String[] names = {"Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"};
 
         // a. Calculate the average number of letters per name
@@ -38,7 +40,7 @@ int[] ages = {3, 9, 23, 64, 2, 8, 28, 93};
         for (String name : names) {
             concatenatedNames += name + " ";
         }
-        System.out.println("Concatenated names: " + concatenatedNames.trim());
+        System.out.println("Concatenated names: " + concatenatedNames);
         
         // 5,6. Access the names array and print out the sum of the names length
         int[] nameLengths = new int[names.length];
@@ -94,11 +96,12 @@ int[] ages = {3, 9, 23, 64, 2, 8, 28, 93};
         return isHotOutside && moneyInPocket > 10.50;
     }
     
-    public static void equation(int euqals) {
+    //Method to calculate and return the product of 2 integers
+    public static int equation(int euqals) {
     	int a = 45;
     	int b = 65;
     	int product = a * b;
-    	System.out.println("The product of the equation is: " + product);
+    	return product;
     	
     }
 	}
